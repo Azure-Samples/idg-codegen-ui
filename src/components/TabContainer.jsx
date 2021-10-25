@@ -1,11 +1,12 @@
 import { useState } from 'react';
 import { Tabs, Tab } from "react-bootstrap";
+
 import { DescriptionForm } from './DescriptionForm';
 import { ApplicationForm } from './ApplicationForm';
 import { ConfigurationForm } from './ConfigurationForm';
 import { ReviewPanel } from './ReviewPanel';
 
-export const TabPanel = () => {
+export const TabContainer = () => {
 
     const [key, setKey] = useState('description');
 
@@ -28,9 +29,12 @@ export const TabPanel = () => {
                 <Tab className="tab-item" eventKey="config" title="Configuration">
                     <ConfigurationForm handleNext={(k) => setKey(k)}/>
                 </Tab>
-                <Tab className="tab-item" eventKey="review" title="Review" disabled>
-                    <ReviewPanel />
-                </Tab>
+                { key === 'review' ?                 
+                <Tab className="tab-item" eventKey="review" title="Review">
+                    <ReviewPanel handleNext={(k) => setKey(k)}/>
+                </Tab> 
+                : 
+                null }
             </Tabs>
         </div>
     );
