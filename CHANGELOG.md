@@ -1,13 +1,4 @@
-## [project-title] Changelog
+# CHANGELOG
+## 10/17/2021
 
-<a name="x.y.z"></a>
-# x.y.z (yyyy-mm-dd)
-
-*Features*
-* ...
-
-*Bug Fixes*
-* ...
-
-*Breaking Changes*
-* ...
+* Initial project
