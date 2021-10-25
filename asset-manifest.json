@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/codegen-ui/static/css/main.2ec8df0a.chunk.css",
+    "main.js": "/codegen-ui/static/js/main.e8f87b93.chunk.js",
+    "main.js.map": "/codegen-ui/static/js/main.e8f87b93.chunk.js.map",
+    "runtime-main.js": "/codegen-ui/static/js/runtime-main.037eb691.js",
+    "runtime-main.js.map": "/codegen-ui/static/js/runtime-main.037eb691.js.map",
+    "static/css/2.0a9ec390.chunk.css": "/codegen-ui/static/css/2.0a9ec390.chunk.css",
+    "static/js/2.8746b7f4.chunk.js": "/codegen-ui/static/js/2.8746b7f4.chunk.js",
+    "static/js/2.8746b7f4.chunk.js.map": "/codegen-ui/static/js/2.8746b7f4.chunk.js.map",
+    "index.html": "/codegen-ui/index.html",
+    "static/css/2.0a9ec390.chunk.css.map": "/codegen-ui/static/css/2.0a9ec390.chunk.css.map",
+    "static/css/main.2ec8df0a.chunk.css.map": "/codegen-ui/static/css/main.2ec8df0a.chunk.css.map",
+    "static/js/2.8746b7f4.chunk.js.LICENSE.txt": "/codegen-ui/static/js/2.8746b7f4.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.037eb691.js",
+    "static/css/2.0a9ec390.chunk.css",
+    "static/js/2.8746b7f4.chunk.js",
+    "static/css/main.2ec8df0a.chunk.css",
+    "static/js/main.e8f87b93.chunk.js"
+  ]
+}
