@@ -1,0 +1,50 @@
+{
+    "appDescription": [
+        {
+            "outputKey": "Title",
+            "elementLabel": "Title",
+            "elementType": "text",
+            "elementDescription": "Enter a descriptive title for the sample."
+        },
+        {
+            "outputKey": "Level",
+            "elementLabel": "Level",
+            "elementType": "select",
+            "elementDescription": "Select a level appropriate for the sample.",
+            "elementValues": [
+                100,
+                200,
+                300,
+                400
+            ]
+        },
+        {
+            "outputKey": "Client",
+            "elementLabel": "Client",
+            "elementType": "text",
+            "elementDescription": "Enter a descriptive title for the client component."
+        },
+        {
+            "outputKey": "Service",
+            "elementLabel": "Service",
+            "elementType": "text",
+            "elementDescription": "Enter a descriptive title for the service component (if any)."
+        },
+        {
+            "outputKey": "RepositoryUrl",
+            "elementLabel": "Repository Url",
+            "elementType": "text",
+            "elementDescription": "Enter a descriptive title for the sample."
+        },
+        {
+            "outputKey": "test",
+            "elementLabel": "label",
+            "elementType": "text"
+        },
+        {
+            "outputKey": "test",
+            "elementLabel": "label",
+            "elementType": "text"
+        }
+    ]
+}
