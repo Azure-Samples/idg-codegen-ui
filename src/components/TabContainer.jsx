@@ -5,6 +5,7 @@ import { DescriptionForm } from './DescriptionForm';
 import { ApplicationForm } from './ApplicationForm';
 import { ConfigurationForm } from './ConfigurationForm';
 import { ReviewPanel } from './ReviewPanel';
+import { TestMarkdown } from './TestMarkdown';
 
 export const TabContainer = () => {
 
@@ -25,6 +26,9 @@ export const TabContainer = () => {
                 </Tab>
                 <Tab className="tab-item" eventKey="apps" title="Application(s)">
                     <ApplicationForm handleNext={(k) => setKey(k)}/>
+                </Tab>
+                <Tab className="tab-item" eventKey="readme" title="Readme Markdown Test">
+                    <TestMarkdown handleNext={(k) => setKey(k)}/>
                 </Tab>
                 <Tab className="tab-item" eventKey="config" title="Configuration">
                     <ConfigurationForm handleNext={(k) => setKey(k)}/>

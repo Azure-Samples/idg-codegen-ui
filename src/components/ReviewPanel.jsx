@@ -16,15 +16,45 @@ export const ReviewPanel = (props) => {
             return value;
         });
 
+
         const newSample = {
             Sample: sanitizeFields(sample.Sample),
             AADApps: sample.AADApps.map(app => sanitizeFields(app)),
+            ReadmeScenario: {
+                MainText: sample.ReadmeScenario.MainText || '',
+                Image: sample.ReadmeScenario.Image || '',
+                AdditionalNotes: sample.ReadmeScenario.AdditionalNotes || ''
+            },
+            ReadmePrerequirements: {
+                FreeWording: sample.ReadmePrerequirements.FreeWording || ''
+            },
+            ReadmeSetup: {
+                UseNewSetup: sample.ReadmeSetup.UseNewSetup || ''
+            },
+            ReadmeTroubleshooting: {
+                FreeText: sample.ReadmeTroubleshooting.FreeText || ''
+            },
+            ReadmeNextSteps: {
+                FreeText: sample.ReadmeNextSteps.FreeText || ''
+            },
+            ReadmeAzureDeploy: {
+                FreeText: sample.ReadmeAzureDeploy.FreeText || ''
+            },
+            ReadmeAboutTheCode: {
+                FreeText: sample.ReadmeAboutTheCode.FreeText || ''
+            },
+            ReadmeUsingTheSample: {
+                FreeText: sample.ReadmeUsingTheSample.FreeText || ''
+            },
+            ReadmeLearnMore: {
+                FreeText: sample.ReadmeLearnMore.FreeText || ''
+            },
             CodeConfiguration: sample.CodeConfiguration.map(config => sanitizeFields(config)),
         };
 
         return newSample;
     }
-    
+
     useEffect(() => {
         const validatedFields = validateFields(sampleContext.sample);
         sampleContext.setSample(validatedFields);
@@ -42,6 +72,35 @@ export const ReviewPanel = (props) => {
             Sample: {},
             AADApps: [],
             CodeConfiguration: [],
+            ReadmeScenario: {
+                MainText: '',
+                Image: '',
+                AdditionalNotes: ''
+            },
+            ReadmePrerequirements: {
+                FreeWording: ''
+            },
+            ReadmeSetup: {
+                UseNewSetup: ''
+            },
+            ReadmeTroubleshooting: {
+                FreeText: ''
+            },
+            ReadmeNextSteps: {
+                FreeText: ''
+            },
+            ReadmeAboutTheCode: {
+                FreeText: '',
+            },
+            ReadmeAzureDeploy: {
+                FreeText: ''
+            },
+            ReadmeUsingTheSample: {
+                FreeText: ''
+            },
+            ReadmeLearnMore: {
+                FreeText: ''
+            },
         });
 
         // move to the next form

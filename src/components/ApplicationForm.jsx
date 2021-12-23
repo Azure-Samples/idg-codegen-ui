@@ -19,7 +19,7 @@ export const ApplicationForm = (props) => {
         });
 
         // move to the next form
-        props.handleNext("config");
+        props.handleNext("readme");
     }
 
     const addApplication = () => {

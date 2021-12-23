@@ -15,6 +15,35 @@ function App() {
     Sample: {},
     AADApps: [],
     CodeConfiguration: [],
+    ReadmeScenario: {
+      MainText: '',
+      Image: '',
+      AdditionalNotes: ''
+    },
+    ReadmePrerequirements: {
+      FreeWording: ''
+    },
+    ReadmeSetup: {
+      UseNewSetup: ''
+    },
+    ReadmeTroubleshooting: {
+      FreeText: ''
+    },
+    ReadmeNextSteps: {
+      FreeText: ''
+    },
+    ReadmeAboutTheCode: {
+      FreeText: '',
+    },
+    ReadmeAzureDeploy: {
+      FreeText: ''
+    },
+    ReadmeUsingTheSample: {
+      FreeText: ''
+    },
+    ReadmeLearnMore: {
+      FreeText: ''
+    },
   };
 
   const [sample, setSample] = useState(sampleObject);
