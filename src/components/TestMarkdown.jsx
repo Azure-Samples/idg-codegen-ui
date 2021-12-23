@@ -1,9 +1,10 @@
+import { Button } from "react-bootstrap";
 import { useContext, useState } from 'react';
 import { marked } from "marked";
 
 import { SampleContext } from '../App';
 
-export const TestMarkdown = _ => {
+export const TestMarkdown = (props) => {
     marked.setOptions({
         renderer: new marked.Renderer(),
         highlight: function (code, lang) {
@@ -44,6 +45,9 @@ export const TestMarkdown = _ => {
         ReadmeAboutTheCode: {
             FreeText: '',
         },
+        ReadmeAzureDeploy: {
+            FreeText: '',
+        },
         ReadmeUsingTheSample: {
             FreeText: ''
         },
@@ -69,6 +73,9 @@ export const TestMarkdown = _ => {
             ...sampleContext.sample,
             ...description
         });
+
+        // move to the next form
+        props.handleNext("config");
     }
 
     const createPreview = (entryElemId, contentId) => {
@@ -78,7 +85,6 @@ export const TestMarkdown = _ => {
         const [property, subProperty] = entryElemId.split('-');
 
         handleChange(property, subProperty, markdown);
-        handleSubmit();
     }
 
     return (
@@ -140,6 +146,9 @@ export const TestMarkdown = _ => {
                 <textarea onChange={_ => createPreview("ReadmeLearnMore-FreeText", "ReadmeLearnMorePreview-FreeText")} placeholder="Write markdown here" id="ReadmeLearnMore-FreeText" style={{ "width": "1000px" }}></textarea>
             </div>
             <div id="ReadmeLearnMorePreview-FreeText"></div>
+            <Button variant="primary" onClick={handleSubmit}>
+                Next
+            </Button>
         </div>
     );
 }

@@ -37,11 +37,11 @@ export const ReviewPanel = (props) => {
             ReadmeNextSteps: {
                 FreeText: sample.ReadmeNextSteps.FreeText || ''
             },
-            ReadmeAzureDeploy: {
-                FreeText: sample.ReadmeAzureDeploy.FreeText || ''
-            },
             ReadmeAboutTheCode: {
                 FreeText: sample.ReadmeAboutTheCode.FreeText || ''
+            },
+            ReadmeAzureDeploy: {
+                FreeText: sample.ReadmeAzureDeploy.FreeText || ''
             },
             ReadmeUsingTheSample: {
                 FreeText: sample.ReadmeUsingTheSample.FreeText || ''
